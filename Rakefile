@@ -13,6 +13,8 @@ def wav_file_for_script(src)
 end
 
 WAVES = SCRIPTS.map { |x| wav_file_for_script(x) }
+SOUNDSCRIPT_TXT = 'npc_sounds_aperture_ai.txt'
+SOUNDSCRIPT_TXT_TARGET = File.join(TARGET_BASE, 'scripts', SOUNDSCRIPT_TXT)
 
 # ---------------------------------------
 
@@ -80,9 +82,16 @@ SCRIPTS.each do |script|
 	end
 end
 
+rule SOUNDSCRIPT_TXT_TARGET => [SOUNDSCRIPT_TXT] do
+	mkdir_p File.dirname(SOUNDSCRIPT_TXT_TARGET)
+	cp SOUNDSCRIPT_TXT, SOUNDSCRIPT_TXT_TARGET
+end
+
 task :default => [:build]
 task :build => [TARGET]
 task :build => WAVES
+
+task :install => [:build, SOUNDSCRIPT_TXT_TARGET]
 
 task TARGET do
 	mkdir_p TARGET
@@ -92,4 +101,8 @@ task :clobber do
 	WAVES.each do |w|
 		rm_f w
 	end
+end
+
+task :run => [:install] do
+	sh 'open', 'steam://run/400'
 end
