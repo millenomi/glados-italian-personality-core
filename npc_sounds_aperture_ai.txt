@@ -295,7 +295,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_entry-1.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_entry-1.wav"
 }
 
 "Portal.01_part1_entry-2"
@@ -303,7 +303,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_entry-2.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_entry-2.wav"
 }
 
 "Portal.01_part1_get_portal_gun-1"
@@ -311,7 +311,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_get_portal_gun-1.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_get_portal_gun-1.wav"
 }
 
 "Portal.01_part1_get_portal_gun-2"
@@ -319,7 +319,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_get_portal_gun-2.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_get_portal_gun-2.wav"
 }
 
 "Portal.01_part1_get_portal_gun-3"
@@ -327,7 +327,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_get_portal_gun-3.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_get_portal_gun-3.wav"
 }
 
 "Portal.01_part1_get_portal_gun-4"
@@ -335,7 +335,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_get_portal_gun-4.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_get_portal_gun-4.wav"
 }
 
 "Portal.01_part1_get_portal_gun-5"
@@ -343,7 +343,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_get_portal_gun-5.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_get_portal_gun-5.wav"
 }
 
 "Portal.01_part1_get_portal_gun-6"
@@ -351,7 +351,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_get_portal_gun-6.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_get_portal_gun-6.wav"
 }
 
 "Portal.01_part1_get_portal_gun-7"
@@ -359,7 +359,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_get_portal_gun-7.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_get_portal_gun-7.wav"
 }
 
 "Portal.01_part1_get_portal_gun-8"
@@ -367,7 +367,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part1_get_portal_gun-8.wav"
+	"wave"		"vo/aperture_ai_ita/01_part1_get_portal_gun-8.wav"
 }
 
 "Portal.01_part2_entry-1"
@@ -375,7 +375,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part2_entry-1.wav"
+	"wave"		"vo/aperture_ai_ita/01_part2_entry-1.wav"
 }
 
 "Portal.01_part2_success-1"
@@ -383,7 +383,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/01_part2_success-1.wav"
+	"wave"		"vo/aperture_ai_ita/01_part2_success-1.wav"
 }
 
 "Portal.02_part1_entry-1"
@@ -391,7 +391,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/02_part1_entry-1.wav"
+	"wave"		"vo/aperture_ai_ita/02_part1_entry-1.wav"
 }
 
 "Portal.02_part1_entry-2"
@@ -399,7 +399,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/02_part1_entry-2.wav"
+	"wave"		"vo/aperture_ai_ita/02_part1_entry-2.wav"
 }
 
 "Portal.02_part1_success-1"
@@ -407,7 +407,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/02_part1_success-1.wav"
+	"wave"		"vo/aperture_ai_ita/02_part1_success-1.wav"
 }
 
 "Portal.02_part1_success-2"
@@ -415,7 +415,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/02_part1_success-2.wav"
+	"wave"		"vo/aperture_ai_ita/02_part1_success-2.wav"
 }
 
 "Portal.02_part2_success-1"
@@ -423,7 +423,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/02_part2_success-1.wav"
+	"wave"		"vo/aperture_ai_ita/02_part2_success-1.wav"
 }
 
 "Portal.02_part2_success-2"
@@ -431,7 +431,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/02_part2_success-2.wav"
+	"wave"		"vo/aperture_ai_ita/02_part2_success-2.wav"
 }
 
 "Portal.03_part1_entry-1"
