@@ -8,7 +8,7 @@ To produce successfully, you must:
 
 * Install the [Mustache](http://mustache.github.com/) gem:
 
-	$ gem install mustache
+		$ gem install mustache
 
 * Have the [SoX audio editing command-line utility](http://sox.sourceforge.net/) on the PATH.
 
