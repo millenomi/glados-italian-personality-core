@@ -439,7 +439,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/03_part1_entry-1.wav"
+	"wave"		"vo/aperture_ai_ita/03_part1_entry-1.wav"
 }
 
 "Portal.03_part1_entry-2"
@@ -447,7 +447,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/03_part1_entry-2.wav"
+	"wave"		"vo/aperture_ai_ita/03_part1_entry-2.wav"
 }
 
 "Portal.03_part1_success-1"
@@ -455,7 +455,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/03_part1_success-1.wav"
+	"wave"		"vo/aperture_ai_ita/03_part1_success-1.wav"
 }
 
 "Portal.03_part2_entry-1"
@@ -463,7 +463,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/03_part2_entry-1.wav"
+	"wave"		"vo/aperture_ai_ita/03_part2_entry-1.wav"
 }
 
 "Portal.03_part2_platform_activated-1"
@@ -471,7 +471,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/03_part2_platform_activated-1.wav"
+	"wave"		"vo/aperture_ai_ita/03_part2_platform_activated-1.wav"
 }
 
 "Portal.04_part1_entry-1"

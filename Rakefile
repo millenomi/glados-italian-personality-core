@@ -25,6 +25,11 @@ class ScriptPart < Mustache
 		render(x).split(/\s+/).map { |x| "[[emph +]]#{x}" }.join ' '
 	end
 	
+	def here(x)
+		# TODO
+		br + render(x)
+	end
+	
 	def br
 		", "
 	end
