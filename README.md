@@ -6,6 +6,10 @@ To produce successfully, you must:
 
 * Have the "Chiara" voice that's part of the [Infovox iVox voice pack](http://www.assistiveware.com/infovox_ivox.php). Which is the only Italian voice I found that can plug into Apple's text-to-speech engine (10.6-), and darn it, it prohibits redistribution. But you can grab it and render the files for yourself, wink wink. Just don't redistribute them.
 
+* Install the [Mustache](http://mustache.github.com/) gem:
+
+	$ gem install mustache
+
 * Have the [SoX audio editing command-line utility](http://sox.sourceforge.net/) on the PATH.
 
 To install the produced .WAV files:
