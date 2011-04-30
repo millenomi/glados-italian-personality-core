@@ -3,18 +3,21 @@ require 'rubygems'
 require 'mustache'
 require 'find'
 
+STEAM_USERNAME = ENV['ILABS_GLADOS_STEAM_USERNAME'] || ENV['USER']
+
 SCRIPTS = FileList['Scripts/*.mustache']
-TARGET_BASE = ENV['ILABS_GLADOS_PORTAL_CONTENT_DIR'] || 'Build'
-TARGET = File.join(TARGET_BASE, 'sound', 'vo', 'aperture_ai_ita')
+TARGET = ENV['ILABS_GLADOS_TARGET'] || File.expand_path("~/Library/Application Support/Steam/SteamApps/#{STEAM_USERNAME}/portal/portal")
+TARGET_WAVES_DIR = File.join(TARGET, 'sound', 'vo', 'aperture_ai_ita')
 
 def wav_file_for_script(src)
 	x = File.basename(src, '.mustache')
-	File.join(TARGET, x + '.wav')
+	File.join(TARGET_WAVES_DIR, x + '.wav')
 end
 
 WAVES = SCRIPTS.map { |x| wav_file_for_script(x) }
-SOUNDSCRIPT_TXT = 'npc_sounds_aperture_ai.txt'
-SOUNDSCRIPT_TXT_TARGET = File.join(TARGET_BASE, 'scripts', SOUNDSCRIPT_TXT)
+
+SOUNDSCRIPT = 'npc_sounds_aperture_ai.txt'
+TARGET_SOUNDSCRIPT = File.join(TARGET, 'scripts', SOUNDSCRIPT)
 
 # ---------------------------------------
 
@@ -82,27 +85,34 @@ SCRIPTS.each do |script|
 	end
 end
 
-rule SOUNDSCRIPT_TXT_TARGET => [SOUNDSCRIPT_TXT] do
-	mkdir_p File.dirname(SOUNDSCRIPT_TXT_TARGET)
-	cp SOUNDSCRIPT_TXT, SOUNDSCRIPT_TXT_TARGET
+rule TARGET_SOUNDSCRIPT => [SOUNDSCRIPT] do
+	mkdir_p File.dirname(TARGET_SOUNDSCRIPT)
+	cp SOUNDSCRIPT, TARGET_SOUNDSCRIPT
+end
+
+rule TARGET_WAVES_DIR do
+	mkdir_p TARGET_WAVES_DIR
 end
 
 task :default => [:build]
-task :build => [TARGET]
+
+desc "Builds the .wav files into the target directory (currently #{TARGET_WAVES_DIR})"
+task :build => [TARGET, TARGET_WAVES_DIR]
 task :build => WAVES
 
-task :install => [:build, SOUNDSCRIPT_TXT_TARGET]
+desc "Same as build, and also installs the sound script (currently in #{TARGET_SOUNDSCRIPT}) enabling the .wav files in-game."
+task :install => [:build, TARGET_SOUNDSCRIPT]
 
-task TARGET do
-	mkdir_p TARGET
-end
-
+desc "Removes both sound files and script from the target directory"
 task :clobber do
 	WAVES.each do |w|
 		rm_f w
 	end
+	
+	rm_f TARGET_SOUNDSCRIPT
 end
 
+desc "Same as install, and also runs Portal."
 task :run => [:install] do
 	sh 'open', 'steam://run/400'
 end

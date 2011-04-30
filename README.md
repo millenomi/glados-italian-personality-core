@@ -12,16 +12,12 @@ To produce successfully, you must:
 
 * Have the [SoX audio editing command-line utility](http://sox.sourceforge.net/) on the PATH.
 
+* Quit Portal.
+
 * Run:
-
-		$ rake
 		
-* The files are put in `./Build` by default. You can change where they go using the `ILABS_GLADOS_PORTAL_CONTENT_DIR` environment variable.
-
-To install the produced .WAV files:
-
-* Install and run Portal at least once.
-
-* In your `SteamApps\USERNAME\portal\portal` directory, put the `npc_sounds_aperture_ai.txt` file in this folder in a new `scripts` folder, and the .WAV files in a `sound\vo\aperture_ai_ita` folder.
-
-* Restart Portal and play! :D
+		$ export ILABS_ILABS_GLADOS_STEAM_USERNAME="your_username_on_steam_123"
+		$ # if it's the same as your Mac account short name, you can skip the above line :)
+		$ rake run
+		
+… and enjoy! If you want to check up how stuff works rather than installing it in your Portal content dir, create a sandbox folder for the Rakefile to play in and export its full path to the ILABS_GLADOS_TARGET environment variable, and also look at the other targets with `rake -T`.
