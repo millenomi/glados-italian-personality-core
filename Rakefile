@@ -47,6 +47,14 @@ class ScriptPart < Mustache
 		"[[emph +]]Centro [[emph +]]Di [[emph +]]Arricchimento"
 	end
 	
+	def slightly_slower(x)
+		"[[rate -30]]" + render(x) + "[[rate +30]]"
+	end
+	
+	def slow(x)
+		"[[rate -100]]" + render(x) + "[[rate +100]]"
+	end
+	
 	def fast(x)
 		"[[rate +100]]" + render(x) + "[[rate -100]]"
 	end
