@@ -12,7 +12,7 @@ To produce successfully, you must:
 
 * Have the [SoX audio editing command-line utility](http://sox.sourceforge.net/) on the PATH.
 
-* Quit Portal.
+* Quit Portal if it's running. (Make sure you have Steam installed, Portal installed through Steam, and that you have run it at least once.)
 
 * Run:
 		
