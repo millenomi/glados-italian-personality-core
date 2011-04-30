@@ -32,7 +32,7 @@ class ScriptPart < Mustache
 	
 	def here(x)
 		# TODO
-		br + render(x)
+		br + em(x) + br
 	end
 	
 	def br
