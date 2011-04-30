@@ -55,6 +55,10 @@ class ScriptPart < Mustache
 		"[[rate -100]]" + render(x) + "[[rate +100]]"
 	end
 	
+	def slower(x)
+		"[[rate -200]]" + render(x) + "[[rate +200]]"
+	end
+	
 	def fast(x)
 		"[[rate +100]]" + render(x) + "[[rate -100]]"
 	end
@@ -110,6 +114,7 @@ task :build => [TARGET, TARGET_WAVES_DIR]
 task :build => WAVES
 
 desc "Same as build, and also installs the sound script (currently in #{TARGET_SOUNDSCRIPT}) enabling the .wav files in-game."
+task :install => [:clobber] unless ENV['ILABS_GLADOS_SKIP_CLOBBERING_ON_INSTALL'] == 'YES'
 task :install => [:build, TARGET_SOUNDSCRIPT]
 
 desc "Removes both sound files and script from the target directory"

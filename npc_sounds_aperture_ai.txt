@@ -559,7 +559,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/06_part1_entry-1.wav"
+	"wave"		"vo/aperture_ai_ita/06_part1_entry-1.wav"
 }
 
 "Portal.06_part1_success_1-1"
@@ -567,7 +567,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/06_part1_success_1-1.wav"
+	"wave"		"vo/aperture_ai_ita/06_part1_success_1-1.wav"
 }
 
 "Portal.06_part1_success_2-1"
@@ -575,7 +575,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"		"vo/aperture_ai/06_part1_success_2-1.wav"
+	"wave"		"vo/aperture_ai_ita/06_part1_success_2-1.wav"
 }
 
 "Portal.07_part1_entry-1"
