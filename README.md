@@ -16,7 +16,7 @@ To produce successfully, you must:
 
 * Run:
 		
-		$ export ILABS_ILABS_GLADOS_STEAM_USERNAME="your_username_on_steam_123"
+		$ export ILABS_GLADOS_STEAM_USERNAME="your_username_on_steam_123"
 		$ # if it's the same as your Mac account short name, you can skip the above line :)
 		$ rake run
 		

@@ -65,7 +65,7 @@ def to_wav(file, wav)
 	
 	text = ScriptPart.new(file).render
 	text = "[[rate +68]]#{text}"
-	puts " == #{file}"
+	puts "\n == #{file}"
 	puts text
 
 	IO.popen "say -v Chiara -o \"#{aif}\"", 'w' do |io|
@@ -74,6 +74,7 @@ def to_wav(file, wav)
 	
 	`sox \"#{aif}\" \"#{wav}\" rate 44.1k`
 	FileUtils.rm aif
+	puts " == \n"
 end
 
 SCRIPTS.each do |script|
