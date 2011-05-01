@@ -39,12 +39,20 @@ class ScriptPart < Mustache
 		", "
 	end
 	
+	def comment(x)
+		''
+	end
+	
 	def aperture_science
 		"Apertùr Sàiens"
 	end
 	
 	def enrichment_center
 		"[[emph +]]Centro [[emph +]]Di [[emph +]]Arricchimento"
+	end
+	
+	def countdown(x)
+		"[[rate -60]]" + render(x) + "[[rate +60]]"
 	end
 	
 	def slightly_slower(x)
