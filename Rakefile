@@ -55,6 +55,10 @@ class ScriptPart < Mustache
 		"[[rate -60]]" + render(x) + "[[rate +60]]"
 	end
 	
+	def slightly_faster(x)
+		"[[rate +30]]" + render(x) + "[[rate -30]]"
+	end
+	
 	def slightly_slower(x)
 		"[[rate -30]]" + render(x) + "[[rate +30]]"
 	end
